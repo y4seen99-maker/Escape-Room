@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-// Assign the switches order in the Inspector (0, 1, 2).
+// The order here is set in the Inspector, starting from element 0.
 public class PowerSequencePuzzle : MonoBehaviour
 {
     [SerializeField] private PowerSwitch[] switches = new PowerSwitch[3];

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Beginner-friendly prototype: door rotates open around its hinge.
+// Rotate the hinge when the puzzle is solved.
 public class SecurityDoor : MonoBehaviour
 {
     [SerializeField] private float openAngle = 90f;

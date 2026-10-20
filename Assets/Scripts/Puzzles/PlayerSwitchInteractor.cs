@@ -1,7 +1,7 @@
 using UnityEngine;
 
-// Add this component to the player. Look at a switch and press E.
-// Uses legacy Input Manager; enable Both or Input Manager (Old) in Player Settings.
+// Look at a switch and press E to use it.
+// Input handling must be set to Both or Input Manager (Old).
 public class PlayerSwitchInteractor : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;

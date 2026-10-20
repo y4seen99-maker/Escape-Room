@@ -26,7 +26,7 @@ This is a **working C# starter**, not a finished Unity scene. Unity scene object
 ## Team integration
 - Keep this feature in a separate branch and merge through a pull request.
 - For scene-level integration, save the room to `Assets/Scenes/PowerRestoration.unity`, then commit the generated `.unity` and `.meta` files.
-- **Do not let two people edit the same Unity scene simultaneously.** Ideally create one scene per level.
+-
 - Optional later upgrades: an interact prompt UI, sound cues, lights that turn on as power returns, and a keypad for a second puzzle.
 
 ## Testing checklist

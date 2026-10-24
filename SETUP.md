@@ -1,20 +1,21 @@
-# Escape Room — Unity starter
+# Escape Room — first-person starter
 
-This is a new starter project, not a completed game. It contains a small placeholder room and a point-and-click puzzle: find the key under the rug, open the desk drawer, then enter its code on the exit keypad.
+Open this project in Unity 6000.6.7f1, open Assets/Scenes/EscapeRoom.unity and press Play. The room and player are created at runtime; the saved scene is intentionally empty.
 
-## Open and play
-1. Install Unity Hub and Unity Editor 6000.6.7f1 (Unity 6).
-2. Clone or download this repository.
-3. In Unity Hub, choose Add project from disk and select the repository folder (the folder containing Assets, Packages and ProjectSettings).
-4. Allow Unity to import the project and generate its default settings.
-5. Open Assets/Scenes/EscapeRoom.unity and press Play.
+## Controls
+- WASD: walk, with collision and gravity.
+- Mouse: look around.
+- E: interact with the object under the crosshair when within 2.5 metres.
+- Escape: close the keypad or pause. Resume releases/recaptures the mouse appropriately.
+- Door keypad: click digits or type numbers, Backspace to delete, Enter to submit.
 
-The room is created by EscapeRoomGame.cs when Play starts, so the saved scene is intentionally empty. Use File > Build Profiles to build for your installed target platform; the scene is included in the build settings.
+## Puzzle
+Walk to the red rug, look down and press E to slide it aside. Look at the revealed brass key and press E to collect it. Walk to the desk and interact with its drawer to unlock it and read the exit-code clue. Walk to the door or wall keypad, press E and enter the code. The door swings open; walk through it to escape. The pause and win menus offer Restart room.
+
+The exit accepts its code even if guessed before reading the clue. No player model/arms or third-party art are included; this is a first-person character controller with a room made from placeholder geometry.
 
 ## Collaboration
-Commit Assets (including .meta files), Packages and ProjectSettings. The repository includes Unity-generated project settings and the package lock file. Commit any changes to these after editing. Library, Temp, Logs and user settings are ignored because Unity recreates them.
-
-No downloaded models, textures or third-party assets are included. All room objects use Unity primitives.
+Commit Assets and .meta files, Packages and ProjectSettings. Library, Temp, Logs and UserSettings are generated locally and ignored. The package lock and Unity-generated project settings are included.
 
 ## Validation
-Imported and compiled in Unity 6000.6.7f1 on macOS. Opened EscapeRoom.unity and confirmed the room and puzzle interface run in Play mode. The complete puzzle interaction sequence and standalone builds have not been verified.
+Compiled and ran in Unity 6000.6.7f1 on macOS. Verified walking, opening the door keypad by approaching the door and pressing E, incorrect-code rejection, correct-code unlock, and walking through the doorway to the win screen. The complete rug/key/drawer interaction route and standalone builds remain unverified.

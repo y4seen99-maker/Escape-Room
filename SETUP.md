@@ -12,9 +12,9 @@ This is a new starter project, not a completed game. It contains a small placeho
 The room is created by EscapeRoomGame.cs when Play starts, so the saved scene is intentionally empty. Use File > Build Profiles to build for your installed target platform; the scene is included in the build settings.
 
 ## Collaboration
-Commit Assets (including .meta files), Packages and ProjectSettings. Unity generates additional default settings and the package lock file on first import; commit those after opening. Library, Temp, Logs and user settings are ignored because Unity recreates them.
+Commit Assets (including .meta files), Packages and ProjectSettings. The repository includes Unity-generated project settings and the package lock file. Commit any changes to these after editing. Library, Temp, Logs and user settings are ignored because Unity recreates them.
 
 No downloaded models, textures or third-party assets are included. All room objects use Unity primitives.
 
 ## Validation
-Files were checked for structure only. Unity 6000.6.7f1 is installed. Automated import failed during asset database initialization in the restricted environment. Opening the editor requires acceptance of the Unity Editor Software Terms before interactive import and play testing can proceed.
+Imported and compiled in Unity 6000.6.7f1 on macOS. Opened EscapeRoom.unity and confirmed the room and puzzle interface run in Play mode. The complete puzzle interaction sequence and standalone builds have not been verified.

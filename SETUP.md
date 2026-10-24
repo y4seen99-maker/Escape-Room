@@ -17,4 +17,4 @@ Commit Assets (including .meta files), Packages and ProjectSettings. Unity gener
 No downloaded models, textures or third-party assets are included. All room objects use Unity primitives.
 
 ## Validation
-Files were checked for structure only. The project has not been imported, compiled or played in Unity because Unity is not installed on the authoring Mac.
+Files were checked for structure only. Unity 6000.6.7f1 is installed. Automated import failed during asset database initialization in the restricted environment. Opening the editor requires acceptance of the Unity Editor Software Terms before interactive import and play testing can proceed.

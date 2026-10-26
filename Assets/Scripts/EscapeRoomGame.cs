@@ -16,11 +16,13 @@ public sealed class EscapeRoomGame : MonoBehaviour
     readonly Vector3 spawn = new Vector3(0, .05f, -3);
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-    static void StartGame()
-    {
-        if (Object.FindFirstObjectByType<EscapeRoomGame>() == null)
-            new GameObject("Escape Room Game").AddComponent<EscapeRoomGame>();
-    }
+static void StartGame()
+{
+    if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "EscapeRoom") return;
+
+    if (Object.FindFirstObjectByType<EscapeRoomGame>() == null)
+        new GameObject("Escape Room Game").AddComponent<EscapeRoomGame>();
+}
 
     void Awake()
     {

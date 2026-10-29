@@ -18,7 +18,7 @@ public class Level3_Switch : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            totalSwitches = totalSwitches + 1;
+            Level3SwitchManager.totalSwitches = Level3SwitchManager.totalSwitches + 1;
         }
     }
 }

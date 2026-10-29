@@ -10,7 +10,7 @@ public class PlayerDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "PlayerBody")
+        if (other.name == "Player")
         {
             found = true;
         }

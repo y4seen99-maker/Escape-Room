@@ -28,7 +28,7 @@ public class SecurityRobot : MonoBehaviour
         if (lookAtPlayer) 
         {
             transform.LookAt(player.transform);
-            Vector3 vel = rb.velocity;
+            Vector3 vel = rb.linearVelocity;
             if(!PlayerDetection.found && vel.x > -2 && vel.x < 2 && vel.z > -2 && vel.z < 2)
             {
                 rb.AddForce(speed * multiplier * Time.deltaTime * transform.forward);

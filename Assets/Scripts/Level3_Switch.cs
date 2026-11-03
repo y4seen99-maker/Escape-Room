@@ -8,6 +8,7 @@ public class Level3_Switch : MonoBehaviour
     void Start()
     {
         SManager = GameObject.Find("SwitchManager");
+        Level3SwitchManager sCount = SManager.GetComponent<Level3SwitchManager>();
     }
 
     // Update is called once per frame
@@ -20,7 +21,7 @@ public class Level3_Switch : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            SManager.totalSwitches += 1;
+            sCount.totalSwitches += 1;
             
         }
     }

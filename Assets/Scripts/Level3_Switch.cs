@@ -23,7 +23,7 @@ public class Level3_Switch : MonoBehaviour
         if (other.name == "Player")
         {
             sCount.totalSwitches += 1;
-            
+            Destroy(gameObject);
         }
     }
 }

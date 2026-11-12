@@ -6,6 +6,7 @@ public class Level3SwitchManager : MonoBehaviour
 {
 
     public int totalSwitches;
+    public GameObject goalObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +17,9 @@ public class Level3SwitchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (totalSwitches == 3)
+        {
+            goalObject.SetActive(true);
+        }
     }
 }

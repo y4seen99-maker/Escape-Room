@@ -5,6 +5,7 @@ public class Level3Goal : MonoBehaviour
 
     public GameObject SManager;
     public GameObject GManager;
+    public GameObject winMessage;
     private Level3SwitchManager sCount;
     private Level3GameManager gComplete;
 
@@ -34,6 +35,8 @@ public class Level3Goal : MonoBehaviour
         if (other.name == "Player" && sCount.totalSwitches == 3)
         {
             gComplete.completed = true;
+            winMessage.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
